@@ -1,0 +1,10 @@
+# 6(b). Write a Python program to count the occurrences of each word in a line of text.
+
+words = input("Enter a line of text: ").split(' ')
+c = {}
+for t in words:
+    if t in c:
+        c[t] += 1
+    else:
+        c[t] = 1
+print(c)
